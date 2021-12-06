@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Zetta Hotels</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- slick slider -->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- aos -->
+	<link href="css/aos.css" rel="stylesheet">
+	<!-- animation -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- style -->
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		.restaurent_card_btn a{
+			width: 60px;
+			height: 60px;
+			text-align: center;
+			line-height: 57px;
+			background-color: #5863F8;
+		}
+		.hover_btn{
+			position: relative;
+			overflow: hidden!important;
+			-webkit-transition: all .3s ease-in-out;
+			-moz-transition: all .3s ease-in-out;
+			-o-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+			z-index:10;
+			display:inline-block;
+		}
+		.hover_btn:hover{}
+		.hover_btn::before {
+			content: '';
+			width: 0%;
+			height: 100%;
+			display: block;
+			background: rgb(50,93,255);
+			position: absolute;
+			-ms-transform: skewX(-20deg);
+			-webkit-transform: skewX(-20deg); 
+			transform: skewX(-20deg);   
+			left: -20%;
+			opacity: 1;
+			top: 0;
+			z-index: -12;
+			-moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+			-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+			-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+			transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+			box-shadow:2px 0px 14px rgba(0,0,0,.6);
+		} 
+
+		.hover_btn::after {
+			content: '';
+			width: 0%;
+			height: 100%;
+			display: block;
+			background: #071982;
+			position: absolute;
+			-ms-transform: skewX(-20deg);
+			-webkit-transform: skewX(-20deg); 
+			transform: skewX(-20deg);   
+			left: -20%;
+			opacity: 0;
+			top: 0;
+			z-index: -15;
+			-webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+			-moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+			-o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+			transition: all .4s cubic-bezier(.2,.95,.57,.99);
+			box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+		}
+		.hover_btn:hover::before, .hover_btn:hover::before{
+			width: 150%;
+			/*opacity:1;*/
+		}
+		.hover_btn:hover::after, .hover_btn:hover::after{
+			opacity:1;
+			width: 150%;
+		}
+	</style>
+</head>
+<body>
+	<!-- restaurant_section -->
+	<section class="restaurant_section">
+		<div class="container">
+			<div class="heading_text" data-aos="fade-down">
+				<h6 class="blue_title">restaurant</h6>
+				<h1 class="black_title">We trust our customers<br>and they trust us too</h1>
+			</div>
+			<div class="restaurant_card_sec">
+				<div class="row">
+					<div class="col-sm-12 col-lg-6 px-sm-2">
+						<div class="restaurant_card" data-aos="flip-down">
+							<div class="custom_row">
+								<div class="restaurant_card_image_col">
+									<div class="restaurant_card_image">
+										<img src="images/restaurant-1.png">
+									</div>
+								</div>
+								<div class="restaurant_card_text_col d-flex flex-wrap align-content-center restaurant_card_bg">
+									<div class="restaurant_card_text">
+										<h6 class="blue_title">Food</h6>
+										<h5>Fresh fish and onions</h5>    
+										<p>Fresh food directly from our<br> restaurant ready coocked for<br> you and you familly</p>
+										<div class="restaurent_card_btn">
+											<a href="#" class="hover_btn">
+												<span><img src="images/arrow-right-white.svg"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-lg-6 px-sm-2 mt-3 mt-lg-0">
+							<div class="restaurant_card" data-aos="flip-down">
+								<div class="custom_row">
+									<div class="restaurant_card_image_col">
+										<div class="restaurant_card_image">
+											<img src="images/restaurant-2.png">
+										</div>
+									</div>
+									<div class="restaurant_card_text_col d-flex flex-wrap align-content-center restaurant_card_bg">
+										<div class="restaurant_card_text">
+											<h6 class="blue_title">Desert</h6>
+											<h5>Chocolate cupcakes</h5>    
+											<p>Fresh food directly from our<br> restaurant ready coocked for<br> you and you familly</p>
+											<div class="restaurent_card_btn">
+												<a href="#" class="hover_btn">
+													<span><img src="images/arrow-right-white.svg"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-lg-6 px-sm-2 mt-3">
+								<div class="restaurant_card" data-aos="flip-down">
+									<div class="custom_row">
+										<div class="restaurant_card_image_col">
+											<div class="restaurant_card_image">
+												<img src="images/restaurant-3.png">
+											</div>
+										</div>
+										<div class="restaurant_card_text_col d-flex flex-wrap align-content-center restaurant_card_bg">
+											<div class="restaurant_card_text">
+												<h6 class="blue_title">DESERT</h6>
+												<h5>Chocolate cupcakes</h5>    
+												<p>Fresh food directly from our<br> restaurant ready coocked for<br> you and you familly</p>
+												<div class="restaurent_card_btn">
+													<a href="#" class="hover_btn">
+														<span><img src="images/arrow-right-white.svg"></span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-lg-6 px-sm-2 mt-3">
+									<div class="restaurant_card" data-aos="flip-down">
+										<div class="custom_row">
+											<div class="restaurant_card_image_col">
+												<div class="restaurant_card_image">
+													<img src="images/restaurant-4.png">
+												</div>
+											</div>
+											<div class="restaurant_card_text_col d-flex flex-wrap align-content-center">
+												<div class="restaurant_card_text">
+													<h6 class="blue_title">Food</h6>
+													<h5>Fresh fish and onions</h5>    
+													<p>Fresh food directly from our<br> restaurant ready coocked for<br> you and you familly</p>
+													<div class="restaurent_card_btn">
+														<a href="#" class="hover_btn">
+															<span><img src="images/arrow-right-white.svg"></span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- bootstrap -->
+					<script src="js/jquery.min.js"></script>
+					<script src="js/popper.min.js"></script>
+					<script src="js/bootstrap.min.js"></script>
+					<!-- slick slider -->
+					<script src="js/slick.js"></script>
+					<!-- aos -->
+					<script src="js/aos.js"></script>
+					<!-- custom js -->
+					<script src="js/custom.js"></script>
+				</body>
+				</html>
+
+
+
+
+				<!DOCTYPE html>
+				<html>
+				<head>
+					<title></title>
+					<style type="text/css">
+						body{
+							background-color: #000;
+						}
+						.btn10{
+							top: 40px;
+							font-family: "proxima-nova", sans-serif;
+							font-weight: 500;
+							font-size: 13px;
+							text-transform: uppercase!important;
+							letter-spacing: 2px;
+							color: #fff;
+							cursor: hand;
+							text-align: center;
+							text-transform: capitalize;
+							border: 1px solid #fff;
+							border-radius:50px;
+							position: relative;
+							overflow: hidden!important;
+							-webkit-transition: all .3s ease-in-out;
+							-moz-transition: all .3s ease-in-out;
+							-o-transition: all .3s ease-in-out;
+							transition: all .3s ease-in-out;
+							background: transparent!important;
+							z-index:10;
+							padding: 15px 100px;
+							margin:10px 4px;
+							display:inline-block;
+							text-decoration: none;
+						}
+						.btn10:hover{
+							border: 1px solid #071982;
+							color: #80ffd3!important;
+						}
+						.btn10::before {
+							content: '';
+							width: 0%;
+							height: 100%;
+							display: block;
+							background: #071982;
+							position: absolute;
+							-ms-transform: skewX(-20deg);
+							-webkit-transform: skewX(-20deg); 
+							transform: skewX(-20deg);   
+							left: -10%;
+							opacity: 1;
+							top: 0;
+							z-index: -12;
+							-moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+							-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+							-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+							transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+							box-shadow:2px 0px 14px rgba(0,0,0,.6);
+						} 
+
+						.btn10::after {
+							content: '';
+							width: 0%;
+							height: 100%;
+							display: block;
+							background: #80ffd3;
+							position: absolute;
+							-ms-transform: skewX(-20deg);
+							-webkit-transform: skewX(-20deg); 
+							transform: skewX(-20deg);   
+							left: -10%;
+							opacity: 0;
+							top: 0;
+							z-index: -15;
+							-webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+							-moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+							-o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+							transition: all .4s cubic-bezier(.2,.95,.57,.99);
+							box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+						}
+						.btn10:hover::before, .btn1O:hover::before{
+							opacity:1;
+							width: 116%;
+						}
+						.btn10:hover::after, .btn1O:hover::after{
+							opacity:1;
+							width: 120%;
+						}
+					</style>
+				</head>
+				<body>
+					<a href="#0" class="btn10">
+						<span>button 10</span>
+						<div class="transition"></div>
+					</a>
+				</body>
+				</html>
