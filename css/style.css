@@ -947,6 +947,9 @@ header.top_nav .navbar-dark .navbar-toggler {
 	nav li .nav-link {
 		padding: 5px 0 !important;
 	}
+	nav li a:hover, nav li .active {
+		color: #121212!important;
+	}
 	.banner_text {
 		padding: 150px 0 250px;
 	}
@@ -1032,7 +1035,7 @@ header.top_nav .navbar-dark .navbar-toggler {
 	}
 	.black_title {
 		font-size: 26px;
-		line-height: 40px;
+		line-height: 32px;
 	}
 	.about_text h5 {
 		font-size: 14px;
@@ -1092,9 +1095,6 @@ header.top_nav .navbar-dark .navbar-toggler {
 	}
 }
 @media only screen and (max-width:  575px){
-	.top_nav.scrollnav{
-		padding: 15px 0 !important;
-	}
 	.banner_text {
 		padding: 110px 0 160px;
 	}
