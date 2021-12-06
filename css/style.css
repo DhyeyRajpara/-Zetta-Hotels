@@ -992,7 +992,7 @@ header.top_nav .navbar-dark .navbar-toggler {
 		padding: 15px;
 	}
 	.restaurant_inner_page_text.about_text {
-		padding-top: 20px;
+		padding: 20px 0 0;
 	}
 }
 @media only screen and (max-width:  767px){
